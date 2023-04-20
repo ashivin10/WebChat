@@ -1,4 +1,4 @@
-# watsapp-colne
+# watsapp-clone
 
 <br/>
 # using reactjs
