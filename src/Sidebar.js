@@ -5,7 +5,6 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import VideoCallIcon from '@mui/icons-material/VideoCall';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import DonutLargeIcon from '@mui/icons-material/DonutLarge';
-import SidebarChat from './SidebarChat'
 function sidebar() {
   return (
     <>
@@ -32,12 +31,9 @@ function sidebar() {
                     <input  className='searchbox'type = 'text' placeholder='search' />
                 </div>
             </div>
-            <div className="sidebar_chat">
-                <SidebarChat/>
-                <SidebarChat/>
-                <SidebarChat/>
-                <SidebarChat/>
-            </div>
+            {/* <div className="sidebar_profile">
+            <Avatar/>
+            </div> */}
         </div>
     </>
   )

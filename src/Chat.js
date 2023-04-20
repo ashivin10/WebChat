@@ -6,7 +6,7 @@ import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
 import MicIcon from '@mui/icons-material/Mic';
 import SendIcon from '@mui/icons-material/Send';
 import React ,{useState} from 'react'
-import axios from './axios.js'
+import axios from 'axios'
 import './Chat.css'
 function Chat({messages}) { 
 

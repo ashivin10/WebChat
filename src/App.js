@@ -3,7 +3,10 @@ import Sidebar from './Sidebar'
 import Chat from './Chat'
 import React ,{useEffect,useState}from 'react'
 import Pusher from 'pusher-js'
-import axios from './axios.js'
+import { Navigate, Routes, Route } from "react-router-dom";
+import axios from 'axios'
+import Login from './login/Login'
+import SignUp from './Signup/Signup'
 function App() {
   const [messages,setmessages]= useState([])
 
@@ -34,14 +37,28 @@ return ()=>{
 }, [messages])
 
 
-  return (
 
+     
+  const user = localStorage.getItem("token");
+	console.log(user)
+  return (
     <div className="App">
-      <div className="app_body">
+     
+      <Routes>
+        
+        {user && <Route path="/" exact element={<div className="app_body">
       <Sidebar />
       <Chat messages = {messages}/>
-      </div>
+      </div>} />}
+        <Route path="/" element={<Navigate replace to="/login" />} />
+        <Route path="/signup" exact element={<SignUp />} />
+        <Route path="/login" exact element={<Login />} />
+        <Route path="/" element={<Navigate replace to="/login" />} />
+      </Routes>
+      
     </div>
+
+   
   );
 }
 

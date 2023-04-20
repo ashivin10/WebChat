@@ -46,9 +46,18 @@ input {
     cursor: pointer;
 
 }
-.sidebar_chat{
-    flex: 1;
-    background: #ffffff;
-    overflow: scroll;
 
+
+
+.sidebar_profile{
+    display: flex;
+    width: 27vw;
+    height: 73vh;
+    justify-content: center;
+    font-size: xx-large;
+}
+.sidebar_profile .MuiSvgIcon-root{
+    width: 10vh;
+    height: 10vh;
+    
 }
