@@ -46,9 +46,28 @@ input {
     cursor: pointer;
 
 }
+.heading h2{
+    text-align: center;
+    font-size: 6vh;
+    color: #5b6e80;
+    font-weight: 800;
+}
 
-
-
+.avatar{
+    display: flex;
+}
+.avatar .text{
+    display: flex;
+margin-left: 20px;
+}
+.avatar h4{
+    text-transform: capitalize;
+    color: #5b6e80;
+    font-weight: 800;
+    margin: 5px;
+    margin-left: 2px;
+    font-size: larger;
+}
 .sidebar_profile{
     display: flex;
     width: 27vw;
@@ -56,8 +75,12 @@ input {
     justify-content: center;
     font-size: xx-large;
 }
-.sidebar_profile .MuiSvgIcon-root{
+.img-icons{
+    width: 15vw;
+    height:15vh ;
+}
+/* .sidebar_profile .MuiSvgIcon-root{
     width: 10vh;
     height: 10vh;
     
-}
+} */
